@@ -1,0 +1,25 @@
+{
+    "name": "local-credentials",
+    "description": "Read and write credentials in a standardised way",
+    "version": "0.0.1",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "nyc mocha",
+        "lint": "eslint src test",
+        "lint-fix": "eslint --fix src test"
+    },
+    "dependencies": {
+        "ini": "^1.3.4"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "chai-as-promised": "^7.1.1",
+        "eslint": "^4.9.0",
+        "eslint-config-prettier": "^2.6.0",
+        "eslint-plugin-prettier": "^2.3.1",
+        "mocha": "^4.0.1",
+        "nyc": "^11.2.1",
+        "prettier": "^1.7.4",
+        "sinon": "^4.0.2"
+    }
+}
