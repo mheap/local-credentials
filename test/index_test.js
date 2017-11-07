@@ -15,6 +15,7 @@ describe("credentials", function() {
   });
 
   afterEach(function() {
+    this.mockFs.verify();
     this.sandbox.restore();
   });
 
@@ -63,6 +64,14 @@ describe("credentials", function() {
   });
 
   describe("#getCredentials()", function() {
+    it.only("passes in the correct path", function() {
+      this.mockFs
+        .expects("readFile")
+        .withArgs("/path/to/.basic/credentials")
+        .once();
+      return expect(this.c.get()).to.be.an.instanceof(Promise);
+    });
+
     it("returns a promise", function() {
       this.mockFs
         .expects("readFile")

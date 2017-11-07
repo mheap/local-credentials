@@ -12,7 +12,7 @@ let credentials = function(file) {
   this.file = file;
 };
 
-credentials.prototype.get = (section, callback) => {
+credentials.prototype.get = function(section, callback) {
   section = section || "default";
 
   return new Promise((resolve, reject) => {
