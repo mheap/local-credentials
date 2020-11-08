@@ -64,7 +64,7 @@ describe("credentials", function() {
   });
 
   describe("#getCredentials()", function() {
-    it.only("passes in the correct path", function() {
+    it("passes in the correct path", function() {
       this.mockFs
         .expects("readFile")
         .withArgs("/path/to/.basic/credentials")
