@@ -1,7 +1,7 @@
 {
     "name": "local-credentials",
     "description": "Read and write credentials in a standardised way",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "main": "src/index.js",
     "scripts": {
         "test": "nyc mocha",
